@@ -1,0 +1,89 @@
+{
+  "aboutMe": {
+    "id": 1,
+    "title": "About Me",
+    "text": "I'm a passionate Computer Science student with a strong foundation in software development and a keen interest in creating innovative digital solutions. My expertise spans multiple programming languages and frameworks, with particular focus on modern web technologies.",
+    "extendedText": "What drives me is the endless potential of technology to solve real-world problems. I enjoy the entire development process - from conceptualizing ideas to implementing elegant code and seeing projects come to life. When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or expanding my knowledge in AI and machine learning. I'm currently seeking opportunities to apply my skills in challenging environments where I can continue to grow as a developer while making meaningful contributions."
+  },
+  "hero": {
+    "id": 1,
+    "title": "Transforming Ideas into Digital Solutions",
+    "subtitle": "CS Innovator | Full-Stack Developer | Tech Enthusiast"
+  },
+  "goals": [
+    {
+      "id": 1,
+      "title": "Become Full-Stack Developer",
+      "description": "Master both frontend and backend technologies."
+    },
+    {
+      "id": 2,
+      "title": "Open Source Contribution",
+      "description": "Contribute to meaningful projects on GitHub."
+    }
+  ],
+  "certificates": [
+    {
+      "id": 1,
+      "title": "Angular Mastery",
+      "issuer": "Udemy",
+      "date": "2024-03-10",
+      "logo": "assets/certificates/angular.svg"
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "name": "C++",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+    },
+    {
+      "id": 2,
+      "name": "C#",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+    },
+    {
+      "id": 3,
+      "name": "Java",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+    },
+    {
+      "id": 4,
+      "name": "Angular",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+    },
+    {
+      "id": 5,
+      "name": "HTML",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+    },
+    {
+      "id": 6,
+      "name": "CSS",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+    },
+    {
+      "id": 7,
+      "name": "MySQL",
+      "logo": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Portfolio Website",
+      "description": "My personal portfolio website built with Angular and JSON Server.",
+      "technologies": ["Angular", "CSS", "HTML", "JSON Server"],
+      "githubUrl": "https://github.com/yourusername/portfolio",
+      "liveUrl": "http://your-live-portfolio.com",
+      "imageUrl": "assets/projects/portfolio.png"
+    }
+  ],
+  "contact": {
+    "email": "malakmasarwe669@gmail.com",
+    "phone": "+972584036945",
+    "github": "https://github.com/mlkmas",
+    "linkedin": "https://www.linkedin.com/in/malak-mas-32a79b249/",
+   "cvUrl": "src/assets/cv/malak_resume.pdf"
+  }
+}

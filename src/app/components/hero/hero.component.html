@@ -1,0 +1,24 @@
+<section id="hero" class="hero-container">
+  <div class="hero-content">
+    <div class="hero-text">
+<div *ngIf="hero as h">
+  <h1>{{ h.title }}</h1>
+  <p>{{ h.subtitle }}</p>
+</div>
+
+
+      <div class="hero-buttons">
+        <a href="#projects" class="cta-button">View My Work</a>
+        <a href="#contact" class="cta-button secondary">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-icon">
+        <i class="fas fa-code"></i>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-down">
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</section>

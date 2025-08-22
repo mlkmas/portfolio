@@ -1,0 +1,43 @@
+<section id="contact" class="contact-container">
+  <div class="contact-content">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-text">I'm always interested in new opportunities, collaborations, or just a friendly chat about technology!</p>
+    
+    <div class="contact-info">
+      <!-- Email -->
+      <div class="contact-item">
+        <i class="fas fa-envelope contact-icon"></i>
+        <a href="mailto:{{contactInfo.email}}" class="contact-link">{{contactInfo.email}}</a>
+      </div>
+      
+      <!-- Phone -->
+      <div class="contact-item">
+        <i class="fas fa-phone contact-icon"></i>
+        <span class="contact-text">{{contactInfo.phone}}</span>
+      </div>
+      
+      <!-- GitHub -->
+      <div class="contact-item">
+        <i class="fab fa-github contact-icon"></i>
+        <a [href]="contactInfo.github" target="_blank" rel="noopener noreferrer" class="contact-link">
+          GitHub Profile
+        </a>
+      </div>
+      
+      <!-- LinkedIn -->
+      <div class="contact-item">
+        <i class="fab fa-linkedin contact-icon"></i>
+        <a [href]="contactInfo.linkedin" target="_blank" rel="noopener noreferrer" class="contact-link">
+          LinkedIn Profile
+        </a>
+      </div>
+      
+     <div class="contact-item cv-item">
+  <i class="fas fa-download contact-icon"></i>
+  <a href="cv/malak_resume.pdf" download="Malak_Masarwe_CV.pdf" class="contact-link cv-button">
+    Download CV
+  </a>
+</div>
+    </div>
+  </div>
+</section>
