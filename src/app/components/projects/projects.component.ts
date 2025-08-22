@@ -1,20 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectsService, Project } from '../../services/projects.service';
 import { CommonModule } from '@angular/common';
-import { PortfolioInfoService, Project } from '../../services/projects.service';
 
 @Component({
   selector: 'app-projects',
-  imports: [CommonModule],
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  styleUrls: ['./projects.component.css'],
+  imports: [CommonModule]
 })
 export class ProjectsComponent implements OnInit {
   projects: Project[] = [];
 
-  constructor(private portfolioInfoService: PortfolioInfoService) {}
+  constructor(private projectsService: ProjectsService) {}
 
   ngOnInit(): void {
-    this.portfolioInfoService.getProjects().subscribe(data => {
+    this.projectsService.getProjects().subscribe((data: Project[]) => {
       this.projects = data;
     });
   }

@@ -71,13 +71,40 @@
   "projects": [
     {
       "id": 1,
-      "title": "Portfolio Website",
-      "description": "My personal portfolio website built with Angular and JSON Server.",
-      "technologies": ["Angular", "CSS", "HTML", "JSON Server"],
-      "githubUrl": "https://github.com/yourusername/portfolio",
-      "liveUrl": "http://your-live-portfolio.com",
-      "imageUrl": "assets/projects/portfolio.png"
-    }
+      "title": "WOSH Angular Project",
+    "description": "Developed a dynamic, real-time dashboard for car wash operators to efficiently manage clients and reservations. The system allows tracking client activity, monitoring ongoing services, and optimizing daily operations for improved workflow and customer satisfaction.",
+    "technologies": ["Angular", "TypeScript", "HTML", "CSS"],
+    "githubUrl": "https://github.com/mlkmas/frontend-admin",
+    "liveUrl": "",
+    "imageUrl": "assets/projects/wosh-angular.png"
+    },
+     {
+    "id": 2,
+    "title": "C Compiler Project",
+    "description": "Implemented a C compiler in ANSI C covering preprocessing, parsing, and code generation.",
+    "technologies": ["C", "ANSI C"],
+    "githubUrl": "https://github.com/mlkmas/assembler-program",
+    "liveUrl": "",
+    "imageUrl": "assets/projects/c-compiler.png"
+  },
+  {
+    "id": 3,
+    "title": "University Fields Project",
+    "description": "A project to analyze and visualize university fields and majors based on student data.",
+    "technologies": ["C#", "HTML", "Access", "css"],
+    "githubUrl": "https://github.com/mlkmas/uniFields",
+    "liveUrl": "",
+    "imageUrl": "assets/projects/university-fields.png"
+  },
+  {
+    "id": 4,
+    "title": "Python Encryption Project",
+    "description": "A Python-based encryption tool demonstrating secure data handling and algorithms.",
+    "technologies": ["Python"],
+    "githubUrl": "https://github.com/mlkmas/encryption",
+    "liveUrl": "",
+    "imageUrl": "assets/projects/python-encryption.png"
+  }
   ],
   "contact": {
     "email": "malakmasarwe669@gmail.com",

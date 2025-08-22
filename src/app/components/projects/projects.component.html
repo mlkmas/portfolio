@@ -1,10 +1,10 @@
+<!-- projects.component.html -->
 <section id="projects" class="projects-container">
   <div class="projects-content">
     <h2 class="section-title">My Projects</h2>
     
     <div class="projects-grid">
       <div class="project-card" *ngFor="let project of projects">
-        <img [src]="project.imageUrl" [alt]="project.title" class="project-image">
         <div class="project-info">
           <h3 class="project-title">{{ project.title }}</h3>
           <p class="project-desc">{{ project.description }}</p>
@@ -12,8 +12,20 @@
             <span class="tech-tag" *ngFor="let tech of project.technologies">{{ tech }}</span>
           </div>
           <div class="project-links">
-            <a [href]="project.githubUrl" target="_blank" class="project-link">GitHub</a>
-            <a [href]="project.liveUrl" target="_blank" class="project-link">Live Demo</a>
+            <a 
+              [href]="project.githubUrl" 
+              target="_blank" 
+              class="project-link" 
+              [class.hidden]="!project.githubUrl">
+              GitHub
+            </a>
+            <a 
+              [href]="project.liveUrl" 
+              target="_blank" 
+              class="project-link" 
+              [class.hidden]="!project.liveUrl">
+              Live Demo
+            </a>
           </div>
         </div>
       </div>

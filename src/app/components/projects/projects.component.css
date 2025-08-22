@@ -1,3 +1,4 @@
+/* projects.component.css - Fixed alignment */
 .projects-container {
   min-height: 100vh;
   padding: 100px 50px;
@@ -5,101 +6,171 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #ff6a00, #ee0979);
-  color: white;
+  background: linear-gradient(135deg, #ffcccb, #ffdac1);
+  color: #5a5a5a;
 }
 
 .projects-content {
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
   text-align: center;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  color: #ff8c69;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 5px;
+  background: #ffb6a3;
+  border-radius: 3px;
 }
 
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
-  margin-top: 50px;
+  width: 100%;
 }
 
 .project-card {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 15px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(255, 140, 105, 0.15);
+  border: 1px solid rgba(255, 182, 163, 0.3);
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  min-height: 380px; /* Increased for consistent height */
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-}
-
-.project-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(255, 140, 105, 0.25);
+  border-color: rgba(255, 140, 105, 0.5);
 }
 
 .project-info {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure it takes full height */
 }
 
 .project-title {
   font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #f9d423;
+  margin-bottom: 15px;
+  color: #ff8c69;
+  font-weight: 600;
 }
 
 .project-desc {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   font-size: 1rem;
+  line-height: 1.5;
+  flex-grow: 1; /* Allow description to grow and push other elements down */
 }
 
 .project-tech {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  min-height: 32px;
+  justify-content: center;
+  align-items: center; /* Center tech tags vertically */
 }
 
 .tech-tag {
-  background: rgba(249, 212, 35, 0.2);
-  color: #f9d423;
-  padding: 5px 10px;
+  background: rgba(255, 140, 105, 0.2);
+  color: #ff8c69;
+  padding: 5px 12px;
   border-radius: 20px;
   font-size: 0.9rem;
+  white-space: nowrap;
+  line-height: 1.4; /* Consistent line height */
 }
 
 .project-links {
   display: flex;
   justify-content: center;
   gap: 15px;
+  margin-top: auto; /* Push links to bottom */
+  padding-top: 15px; /* Add some spacing */
 }
 
 .project-link {
-  color: white;
+  padding: 8px 20px;
+  background: transparent;
+  color: #ff8c69;
   text-decoration: none;
-  padding: 8px 15px;
-  border: 2px solid #f9d423;
-  border-radius: 30px;
+  border-radius: 20px;
+  font-weight: 500;
   transition: all 0.3s ease;
+  border: 2px solid #ff8c69;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 120px; /* Consistent button width */
+  justify-content: center; /* Center button text */
 }
 
 .project-link:hover {
-  background: #f9d423;
-  color: #1f1c2c;
+  background: #ff8c69;
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 140, 105, 0.3);
 }
 
-/* Responsive Projects */
+/* Hide buttons when they have no URL */
+.project-link.hidden {
+  display: none;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .projects-container {
-    padding: 100px 20px;
+    padding: 80px 20px;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project-link {
+    width: 100%;
+    max-width: 200px;
   }
 }
 
 @media (max-width: 480px) {
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .project-card {
+    min-height: 350px;
+    padding: 20px;
   }
 }

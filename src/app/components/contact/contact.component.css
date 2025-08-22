@@ -1,4 +1,4 @@
-/* Contact Container Styles */
+/* Contact Container Styles - Soft Lilac */
 .contact-container {
   min-height: 100vh;
   padding: 100px 50px;
@@ -6,8 +6,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #4A00E0, #8E2DE2);
-  color: white;
+  background: linear-gradient(135deg, #e6e6fa, #d8bfd8);
+  color: #5a5a5a;
 }
 
 .contact-content {
@@ -22,6 +22,7 @@
   position: relative;
   display: inline-block;
   font-weight: 700;
+  color: #9370db;
 }
 
 .section-title::after {
@@ -32,7 +33,7 @@
   transform: translateX(-50%);
   width: 80px;
   height: 5px;
-  background: #f9d423;
+  background: #b19cd9;
   border-radius: 3px;
 }
 
@@ -48,7 +49,7 @@
 .contact-info {
   margin: 50px 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 25px;
   width: 100%;
   max-width: 1000px;
@@ -61,38 +62,39 @@
   justify-content: center;
   gap: 15px;
   padding: 25px 20px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 15px;
   transition: all 0.3s ease;
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(177, 156, 217, 0.3);
   min-height: 100px;
+  box-shadow: 0 5px 15px rgba(177, 156, 217, 0.2);
 }
 
 .contact-item:hover {
   transform: translateY(-8px);
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  border-color: rgba(249, 212, 35, 0.3);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 15px 35px rgba(177, 156, 217, 0.3);
+  border-color: rgba(147, 112, 219, 0.5);
 }
 
 /* CV Item - Special Styling */
 .contact-item.cv-item {
-  background: rgba(249, 212, 35, 0.15);
-  border: 2px solid rgba(249, 212, 35, 0.3);
+  background: rgba(177, 156, 217, 0.4);
+  border: 2px solid rgba(177, 156, 217, 0.5);
   grid-column: 1 / -1; /* Make CV span full width */
   max-width: 400px;
   margin: 0 auto;
 }
 
 .contact-item.cv-item:hover {
-  background: rgba(249, 212, 35, 0.2);
+  background: rgba(177, 156, 217, 0.5);
 }
 
 /* Icons - Fixed to prevent duplication */
 .contact-icon {
   font-size: 2.2rem;
-  color: #f9d423;
+  color: #9370db;
   width: 40px;
   text-align: center;
   flex-shrink: 0;
@@ -100,7 +102,7 @@
 
 /* Text and Links */
 .contact-link, .contact-text {
-  color: white;
+  color: #5a5a5a;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
@@ -111,7 +113,7 @@
 }
 
 .contact-link:hover {
-  color: #f9d423;
+  color: #9370db;
 }
 
 /* Remove the nested icons from links */
@@ -122,26 +124,26 @@
 /* CV Button Styling */
 .cv-button {
   padding: 15px 30px;
-  background: #f9d423;
-  color: #1f1c2c !important;
+  background: #9370db;
+  color: white !important;
   text-decoration: none;
   border-radius: 30px;
   font-weight: 600;
   font-size: 1.1rem;
   transition: all 0.3s ease;
-  border: 2px solid #f9d423;
+  border: 2px solid #9370db;
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  box-shadow: 0 5px 20px rgba(249, 212, 35, 0.3);
+  box-shadow: 0 5px 20px rgba(147, 112, 219, 0.3);
   margin: 0;
 }
 
 .cv-button:hover {
   background: transparent;
-  color: #f9d423 !important;
+  color: #9370db !important;
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 25px rgba(249, 212, 35, 0.4);
+  box-shadow: 0 8px 25px rgba(147, 112, 219, 0.4);
 }
 
 /* Loading and Error States */
@@ -149,7 +151,7 @@
   text-align: center;
   padding: 30px;
   font-size: 1.2rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 15px;
   margin: 20px 0;
 }
@@ -160,7 +162,7 @@
 }
 
 .loading {
-  color: #f9d423;
+  color: #9370db;
 }
 
 /* Responsive Design */
@@ -284,6 +286,6 @@
 /* Focus styles for accessibility */
 .contact-link:focus,
 .cv-button:focus {
-  outline: 2px solid #f9d423;
+  outline: 2px solid #9370db;
   outline-offset: 3px;
 }

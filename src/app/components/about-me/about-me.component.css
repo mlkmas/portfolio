@@ -1,3 +1,4 @@
+/* About Container - Soft Lavender */
 .about-container {
   min-height: 100vh;
   padding: 100px 50px;
@@ -5,8 +6,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
+  background: linear-gradient(135deg, #d6e3ff, #e2d1ff);
+  color: #5a5a5a;
 }
 
 .about-content {
@@ -20,8 +21,11 @@
   margin-bottom: 40px;
   position: relative;
   display: inline-block;
+  color: #9370db;
 }
-
+.about-actions{
+  animation: fadeInUp 0.6s ease forwards;
+}
 .section-title::after {
   content: '';
   position: absolute;
@@ -30,7 +34,7 @@
   transform: translateX(-50%);
   width: 80px;
   height: 5px;
-  background: #f9d423;
+  background: #b19cd9;
   border-radius: 3px;
 }
 

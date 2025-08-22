@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, map } from 'rxjs';
 
 export interface AboutMe {
   id: number;
@@ -29,8 +29,6 @@ export interface Certificate {
   logo?: string;
 }
 
-
-
 export interface ContactInfo {
   email: string;
   phone: string;
@@ -43,30 +41,33 @@ export interface ContactInfo {
   providedIn: 'root'
 })
 export class PortfolioInfoService {
-  private baseUrl = 'http://localhost:3000';
+  private baseUrl = 'assets/db.json'; // your JSON file
 
   constructor(private http: HttpClient) {}
 
+  private fetchSection<T>(section: string): Observable<T> {
+    return this.http.get<any>(this.baseUrl).pipe(
+      map(data => data[section])
+    );
+  }
+
   getAboutMe(): Observable<AboutMe> {
-    return this.http.get<AboutMe>(`${this.baseUrl}/aboutMe`);
+    return this.fetchSection<AboutMe>('aboutMe');
   }
 
   getHero(): Observable<Hero> {
-    return this.http.get<Hero>(`${this.baseUrl}/hero`);
+    return this.fetchSection<Hero>('hero');
   }
 
   getGoals(): Observable<Goal[]> {
-    return this.http.get<Goal[]>(`${this.baseUrl}/goals`);
+    return this.fetchSection<Goal[]>('goals');
   }
 
   getCertificates(): Observable<Certificate[]> {
-    return this.http.get<Certificate[]>(`${this.baseUrl}/certificates`);
+    return this.fetchSection<Certificate[]>('certificates');
   }
 
-
- 
-
   getContactInfo(): Observable<ContactInfo> {
-    return this.http.get<ContactInfo>(`${this.baseUrl}/contact`);
+    return this.fetchSection<ContactInfo>('contact');
   }
 }
